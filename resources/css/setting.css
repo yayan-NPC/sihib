@@ -1,0 +1,694 @@
+/* ==============================
+   SIHIB - SETTINGS CSS
+================================ */
+
+
+/* =========================
+   HEADER ACTION
+========================= */
+
+.settings-header-action{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+
+
+.btn-cancel{
+
+    padding:11px 20px;
+
+    border-radius:10px;
+
+    border:1px solid var(--border);
+
+    background:var(--card);
+
+    color:var(--text);
+
+    cursor:pointer;
+
+    font-size:14px;
+
+}
+
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+
+.settings-container{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:10px;
+
+    padding:30px;
+
+}
+
+
+
+/* =========================
+   SECTION
+========================= */
+
+
+.settings-section{
+
+    display:grid;
+
+    grid-template-columns:240px 1fr;
+
+    gap:45px;
+
+    padding:30px 0;
+
+    border-bottom:1px solid #D0D5DD;
+
+}
+
+
+
+.settings-section:last-child{
+
+    border-bottom:none;
+
+}
+
+
+
+
+
+.settings-description h3{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:var(--text);
+
+}
+
+
+
+.settings-description p{
+
+    font-size:13px;
+
+    line-height:1.5;
+
+    color:#98A2B3;
+
+}
+
+
+
+
+
+/* =========================
+   CONTENT
+========================= */
+
+
+.settings-content{
+
+    width:100%;
+
+}
+
+
+
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+
+.profile-upload{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+
+.profile-upload{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.profile-avatar{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    background:#ffffff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+
+
+.profile-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    object-position:center;
+
+    border-radius:50%;
+
+    display:block;
+
+    background:white;
+
+}
+
+
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+
+.settings-two-column{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+
+
+
+.password-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+
+
+
+
+/* =========================
+   FORM
+========================= */
+
+
+.settings-form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    margin-bottom:18px;
+
+}
+
+
+
+.settings-form-group label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#344054;
+
+}
+
+
+
+.settings-form-group input,
+.settings-form-group select,
+.settings-form-group textarea{
+
+
+    width:100%;
+
+    height:42px;
+
+    border-radius:10px;
+
+    border:1px solid #B8C2CC;
+
+    padding:0 14px;
+
+    background:white;
+
+    color:#344054;
+
+    outline:none;
+
+    font-size:14px;
+
+    transition:.25s ease;
+
+}
+
+
+
+.settings-form-group textarea{
+
+    height:100px;
+
+    padding:12px 14px;
+
+    resize:none;
+
+}
+
+
+
+
+
+.settings-form-group input:hover,
+.settings-form-group select:hover{
+
+    border-color:#98A2B3;
+
+}
+
+
+
+
+
+.settings-form-group input:focus,
+.settings-form-group select:focus,
+.settings-form-group textarea:focus{
+
+
+    border-color:var(--primary);
+
+
+    box-shadow:
+
+    0 0 0 3px rgba(46,139,87,.12);
+
+
+}
+
+
+
+
+
+/* =========================
+   BUTTON
+========================= */
+
+
+.btn-outline{
+
+
+    width:max-content;
+
+
+    padding:10px 18px;
+
+
+    border-radius:10px;
+
+
+    border:1px solid #B8C2CC;
+
+
+    background:var(--card);
+
+
+    color:var(--text);
+
+
+    cursor:pointer;
+
+
+    font-size:14px;
+
+
+    transition:.25s ease;
+
+
+}
+
+
+
+.btn-outline:hover{
+
+    border-color:var(--primary);
+
+}
+
+
+
+
+
+/* =========================
+   SETTINGS OPTION
+========================= */
+
+
+.settings-option{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    padding:12px 0;
+
+
+}
+
+
+
+.settings-option h4{
+
+
+    font-size:14px;
+
+    margin-bottom:4px;
+
+
+}
+
+
+
+.settings-option p{
+
+
+    font-size:12px;
+
+    color:#98A2B3;
+
+
+}
+
+
+
+
+
+/* =========================
+   SWITCH
+========================= */
+
+
+.switch{
+
+    position:relative;
+
+    width:45px;
+
+    height:24px;
+
+}
+
+
+
+.switch input{
+
+    display:none;
+
+}
+
+
+
+.switch span{
+
+
+    position:absolute;
+
+
+    inset:0;
+
+
+    background:#D1D5DB;
+
+
+    border-radius:20px;
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+.switch span:before{
+
+
+    content:"";
+
+
+    position:absolute;
+
+
+    width:18px;
+
+
+    height:18px;
+
+
+    left:3px;
+
+
+    top:3px;
+
+
+    background:white;
+
+
+    border-radius:50%;
+
+
+    transition:.25s ease;
+
+
+}
+
+
+
+.switch input:checked + span{
+
+
+    background:var(--primary);
+
+
+}
+
+
+
+.switch input:checked + span:before{
+
+
+    transform:translateX(21px);
+
+
+}
+
+
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+
+body.dark .settings-container{
+
+
+    background:#1F2937;
+
+
+}
+
+
+
+body.dark .settings-section{
+
+
+    border-color:#374151;
+
+
+}
+
+
+
+body.dark .settings-description h3{
+
+
+    color:#F9FAFB;
+
+
+}
+
+
+
+body.dark .settings-form-group label{
+
+
+    color:#E5E7EB;
+
+
+}
+
+
+
+body.dark .settings-form-group input,
+body.dark .settings-form-group select,
+body.dark .settings-form-group textarea{
+
+
+    background:#111827;
+
+
+    color:white;
+
+
+    border-color:#4B5563;
+
+
+}
+
+
+
+body.dark .btn-outline,
+body.dark .btn-cancel,
+body.dark .settings-tab{
+
+
+    background:#1F2937;
+
+
+    color:#F9FAFB;
+
+
+    border-color:#374151;
+
+
+}
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+    .settings-section{
+
+
+        grid-template-columns:1fr;
+
+
+        gap:20px;
+
+
+    }
+
+
+
+    .settings-two-column,
+    .password-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+
+    .settings-header-action{
+
+
+        flex-direction:column;
+
+
+    }
+
+
+}
+
+/* =========================
+   AVATAR BORDER FIX
+========================= */
+
+.profile-avatar,
+.user-avatar{
+
+    border:1px solid #D0D5DD;
+
+}

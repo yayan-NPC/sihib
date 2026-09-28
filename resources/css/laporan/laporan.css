@@ -1,0 +1,224 @@
+/* =========================
+   LAPORAN TAHUNAN TAB
+========================= */
+
+.laporan-tabs{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.laporan-tab{
+
+    width:120px;
+
+    height:42px;
+
+    border-radius:8px;
+
+    border:1px solid #e5e7eb;
+
+    background:#ffffff;
+
+    color:#222;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+
+}
+
+
+.laporan-tab:hover{
+
+    border-color:#2E8B57;
+
+    color:#2E8B57;
+
+}
+
+
+
+.laporan-tab.active{
+
+    background:#2E8B57;
+
+    color:white;
+
+    border-color:#2E8B57;
+
+    box-shadow:
+
+    0 8px 20px rgba(46,139,87,.20);
+
+}
+
+
+
+/* =========================
+   CARD LAPORAN
+========================= */
+
+.laporan-data{
+
+    animation:laporanFade .25s ease;
+
+}
+
+
+
+.laporan-data h3{
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+    color:#1f2937;
+
+}
+
+
+
+/* =========================
+   TABLE LAPORAN
+========================= */
+
+
+.laporan-data table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    border:1px solid #b8c7bd;
+
+}
+
+
+
+.laporan-data th{
+
+    background:#D9F0E2;
+
+    color:#176B3A;
+
+    padding:14px;
+
+    text-align:center;
+
+    font-size:13px;
+
+}
+
+
+
+.laporan-data td{
+
+    padding:14px;
+
+    border-bottom:1px solid #eeeeee;
+
+    font-size:13px;
+
+}
+
+
+
+.laporan-data tbody tr{
+
+    transition:.2s ease;
+
+}
+
+
+
+.laporan-data tbody tr:hover{
+
+    background:#F9FCFA;
+
+}
+
+
+
+/* NILAI HIBAH */
+
+.laporan-data td:last-child{
+
+    font-weight:600;
+
+}
+
+
+
+/* ANIMASI PINDAH TAB */
+
+@keyframes laporanFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(5px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* =========================
+   BORDER TABEL LAPORAN
+========================= */
+
+.laporan-data .hibah-modern-table{
+
+    border-collapse:collapse;
+
+    width:100%;
+
+}
+
+
+
+.laporan-data .hibah-modern-table th,
+.laporan-data .hibah-modern-table td{
+
+    border:1px solid #b8c7bd;
+
+}
+
+
+
+.laporan-data .hibah-modern-table td{
+
+    padding:14px;
+
+}
+
+/* =========================
+   LAPORAN CARD RADIUS
+========================= */
+
+.laporan-card{
+
+    border-radius:8px !important;
+
+    overflow:hidden;
+
+}

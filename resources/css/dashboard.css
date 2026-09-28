@@ -1,0 +1,305 @@
+/* ==============================
+   SIHIB - DASHBOARD CSS
+================================ */
+
+
+/* =========================
+   DASHBOARD TOPBAR
+========================= */
+
+.dashboard-topbar{
+    height:60px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:30px;
+}
+
+
+/* ACTION */
+
+.dashboard-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+
+.top-icon{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    border:none;
+    background:var(--card);
+    color:#6b7280;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:.25s ease;
+}
+
+.top-icon:hover{
+    color:var(--primary);
+    transform:translateY(-2px);
+}
+
+
+/* PROFILE MINI */
+
+.profile img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid var(--card);
+}
+
+
+/* =========================
+   STAT CARD
+========================= */
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-bottom:25px;
+}
+
+
+.stat-card{
+    background:#ffffff;
+    border:1px solid #edf0f5;
+    border-radius:10px;
+    padding:20px 22px;
+    min-height:140px;
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+    transition:.2s ease;
+}
+
+.stat-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+
+.stat-card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:#667085;
+    font-size:14px;
+    font-weight:500;
+}
+
+
+.stat-icon{
+    width:38px;
+    height:38px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#eff6ff;
+    color:var(--primary);
+}
+
+
+.stat-icon svg{
+    width:18px;
+    height:18px;
+    stroke-width:1.8;
+}
+
+
+.stat-card h2{
+    margin-top:15px;
+    margin-bottom:8px;
+    font-size:25px;
+    font-weight:700;
+    color:#101828;
+}
+
+
+.stat-card p{
+    margin:0;
+    font-size:12px;
+    color:#98a2b3;
+}
+
+
+/* =========================
+   CHART
+========================= */
+
+.dashboard-chart-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+
+.dashboard-card-chart{
+    background:var(--card);
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    border:1px solid var(--border);
+}
+
+
+.dashboard-card-chart h3{
+    font-size:17px;
+    margin-bottom:20px;
+    color:var(--text);
+}
+
+
+.chart-box,
+.chart-box-small{
+    height:300px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.dashboard-card-table{
+    background:var(--card);
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+    border:1px solid var(--border);
+}
+
+
+.table-title{
+    margin-bottom:20px;
+}
+
+
+.table-title h3{
+    font-size:17px;
+}
+
+
+.dashboard-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+
+.dashboard-table th{
+    background:var(--light);
+    padding:14px;
+    font-size:13px;
+    text-align:left;
+}
+
+
+.dashboard-table td{
+    padding:14px;
+    border-bottom:1px solid var(--border);
+}
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+body.dark .stat-card{
+    background:#1F2937;
+    border-color:#374151;
+}
+
+
+body.dark .stat-card h2{
+    color:#f3f4f6;
+}
+
+
+body.dark .stat-card-header{
+    color:#d1d5db;
+}
+
+
+body.dark .stat-card p{
+    color:#9ca3af;
+}
+
+
+body.dark .stat-icon{
+    background:#064E3B;
+    color:#34D399;
+}
+
+
+body.dark .dashboard-search{
+    background:#1F2937;
+}
+
+
+body.dark .dashboard-search input{
+    color:#f3f4f6;
+}
+
+
+body.dark .top-icon{
+    background:#1F2937;
+    color:#d1d5db;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1200px){
+
+    .dashboard-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .dashboard-chart-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    .dashboard-grid{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-search{
+        width:200px;
+    }
+
+}
+
+/* =========================
+   PERLEBAR GRAFIK TAHUN
+========================= */
+
+.dashboard-card-chart .chart-box{
+
+    width:100%;
+
+    height:350px;
+
+}
+
+
+.dashboard-card-chart:first-child .chart-box canvas{
+
+    width:100% !important;
+
+    height:100% !important;
+
+}

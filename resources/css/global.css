@@ -1,0 +1,1471 @@
+/* ==============================
+   SIHIB - GLOBAL CSS
+================================ */
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+
+    --primary:#2E8B57;
+    --hover:#236B43;
+
+    --light:#EAF6EF;
+
+    --background:#F4F7F5;
+
+    --card:#ffffff;
+
+    --text:#333333;
+
+    --border:#eeeeee;
+
+}
+
+
+
+/* =========================
+   RESET
+========================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:"Inter",Arial,sans-serif;
+
+}
+
+
+
+/* =========================
+   BODY
+========================= */
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    transition:.3s ease;
+
+}
+
+
+
+/* =========================
+   WRAPPER
+========================= */
+
+.wrapper{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.content{
+
+    margin-left:280px;
+
+    padding:22px 35px;
+
+    width:calc(100% - 280px);
+
+    animation:contentFade .25s ease;
+
+}
+
+
+
+@keyframes contentFade{
+
+    from{
+
+        opacity:.85;
+
+        transform:translateY(5px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   GLOBAL TOPBAR
+========================= */
+
+
+.app-topbar{
+
+    height:60px;
+
+    background:var(--card);
+
+    border-radius:12px;
+
+    padding:0 18px;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+
+    margin-bottom:25px;
+
+
+    box-shadow:
+
+    0 5px 20px rgba(0,0,0,.03);
+
+}
+
+
+
+/* SEARCH */
+
+.app-search{
+
+    width:360px;
+
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background: #FFFFFF;
+
+    border-radius:100px;
+
+    padding:0 15px;
+
+
+    border:1px solid #787878;
+
+
+    box-shadow:
+    inset 0 1px 2px rgba(0,0,0,.03);
+
+}
+
+
+.app-search svg{
+
+    width:16px;
+
+    height:16px;
+
+
+    fill:none;
+
+    stroke:#98A2B3;
+
+    stroke-width:2;
+
+}
+
+
+
+.app-search input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:13px;
+
+}
+
+
+
+/* ACTION */
+
+.app-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+
+.top-icon{
+
+    width:38px;
+
+    height:38px;
+
+
+    border-radius:50%;
+
+
+    border:1px solid #eeeeee;
+
+    background:white;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    cursor:pointer;
+
+    transition:.25s ease;
+
+}
+
+
+
+.top-icon:hover{
+
+    transform:translateY(-2px);
+
+    color:var(--primary);
+
+}
+
+
+
+.top-icon svg{
+
+    width:18px;
+
+    height:18px;
+
+}
+
+
+
+/* USER */
+
+.user-avatar{
+
+    width:38px;
+
+    height:38px;
+
+
+    border-radius:50%;
+
+
+    background:var(--primary);
+
+    color:white;
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+    font-weight:600;
+
+}
+
+/* =========================
+   PROFILE IMAGE
+========================= */
+
+.top-profile-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+/* =========================
+   GLOBAL CARD
+========================= */
+
+
+.card,
+.card-table{
+
+    background:var(--card);
+
+    border-radius:22px;
+
+    padding:25px;
+
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,.05);
+
+
+    transition:.25s ease;
+
+}
+
+
+
+.card:hover,
+.card-table:hover{
+
+    box-shadow:
+
+    0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+
+/* =========================
+   PAGE HEADER
+========================= */
+
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.page-header p{
+
+    color:#777;
+
+    margin-top:5px;
+
+}
+
+
+
+/* =========================
+   BUTTON GLOBAL
+========================= */
+
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+
+    padding:12px 18px;
+
+
+    border-radius:8px;
+
+
+    border:none;
+
+
+    text-decoration:none;
+
+
+    cursor:pointer;
+
+
+    transition:.25s ease;
+
+}
+
+
+
+.btn-primary:hover{
+
+    background:var(--hover);
+
+    transform:translateY(-1px);
+
+}
+
+
+
+/* =========================
+   SEARCH GLOBAL
+========================= */
+
+
+.search-form{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.search-form input{
+
+    flex:1;
+
+    padding:12px;
+
+
+    border:1px solid #ddd;
+
+
+    border-radius:12px;
+
+
+    outline:none;
+
+}
+
+
+
+.search-form input:focus{
+
+    border-color:var(--primary);
+
+
+    box-shadow:
+
+    0 0 0 3px rgba(46,139,87,.12);
+
+}
+
+
+
+.search-form button{
+
+    background:var(--primary);
+
+    color:white;
+
+
+    border:none;
+
+
+    padding:0 22px;
+
+
+    border-radius:12px;
+
+
+    cursor:pointer;
+
+}
+
+
+
+/* =========================
+   TABLE GLOBAL
+========================= */
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:var(--light);
+
+    color:var(--primary);
+
+}
+
+
+
+th,
+td{
+
+    padding:14px;
+
+    border-bottom:1px solid var(--border);
+
+    text-align:left;
+
+}
+
+
+
+tbody tr:hover{
+
+    background:#F9FCFA;
+
+}
+
+
+
+/* =========================
+   DETAIL BUTTON
+========================= */
+
+
+.btn-detail{
+
+    background:var(--light);
+
+
+    color:var(--primary);
+
+
+    padding:8px 12px;
+
+
+    border-radius:10px;
+
+
+    text-decoration:none;
+
+
+    font-size:13px;
+
+}
+
+
+
+.btn-detail:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* =========================
+   TOAST NOTIFICATION
+========================= */
+
+
+.toast-wrapper{
+
+    position:fixed;
+
+    top:25px;
+
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    z-index:9999;
+
+    pointer-events:none;
+
+}
+
+
+
+.toast{
+
+    min-width:320px;
+
+    max-width:450px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 22px;
+
+    border-radius:12px;
+
+    background:white;
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,.15);
+
+    animation:
+    toastSlideIn .35s ease forwards;
+
+}
+
+
+
+.toast-icon{
+
+    width:32px;
+
+    height:32px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+}
+
+
+
+.toast strong{
+
+    display:block;
+
+    font-size:14px;
+
+}
+
+
+.toast p{
+
+    margin:3px 0 0;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+/* SUCCESS */
+
+.toast-success{
+
+    border-left:5px solid #2E8B57;
+
+}
+
+
+.toast-success .toast-icon{
+
+    background:#EAF6EF;
+
+    color:#2E8B57;
+
+}
+
+
+
+
+
+/* ERROR */
+
+.toast-error{
+
+    border-left:5px solid #D92D20;
+
+}
+
+
+.toast-error .toast-icon{
+
+    background:#FEF3F2;
+
+    color:#D92D20;
+
+}
+
+
+
+
+
+/* ANIMASI MASUK */
+
+@keyframes toastSlideIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-80px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+
+
+/* KELUAR */
+
+.toast-wrapper.hide{
+
+    animation:toastWrapperOut .35s ease forwards;
+
+}
+
+
+
+@keyframes toastWrapperOut{
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(-80px);
+
+    }
+
+}
+
+/* =========================
+   DARK MODE
+========================= */
+
+
+body.dark{
+
+    --background:#111827;
+
+    --card:#1F2937;
+
+    --primary:#34D399;
+
+    --hover:#059669;
+
+    --light:#1F2937;
+
+    --text:#f3f4f6;
+
+    --border:#374151;
+
+}
+
+
+
+body.dark .app-topbar{
+
+    background:#1F2937;
+
+}
+
+
+
+body.dark .app-search{
+
+    background:#111827;
+
+}
+
+
+
+body.dark .app-search input{
+
+    color:white;
+
+}
+
+
+
+body.dark .top-icon{
+
+    background:#1F2937;
+
+    border-color:#374151;
+
+    color:#f3f4f6;
+
+}
+
+
+
+body.dark .card,
+body.dark .card-table{
+
+    background:#1F2937;
+
+    color:#f3f4f6;
+
+}
+
+
+
+body.dark table{
+
+    color:#e5e7eb;
+
+}
+
+
+
+body.dark th{
+
+    background:#064e3b;
+
+}
+
+
+
+body.dark td{
+
+    border-color:#374151;
+
+}
+
+
+
+body.dark .search-form input{
+
+    background:#1F2937;
+
+    color:white;
+
+    border-color:#374151;
+
+}
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:900px){
+
+
+    .content{
+
+        margin-left:0;
+
+        width:100%;
+
+        padding:20px;
+
+    }
+
+
+    .app-topbar{
+
+        flex-direction:column;
+
+        height:auto;
+
+        gap:15px;
+
+        padding:15px;
+
+    }
+
+
+    .app-search{
+
+        width:100%;
+
+    }
+
+
+}
+
+/* =========================
+   THEME ICON SWITCH
+========================= */
+
+
+.sun-icon{
+
+    display:none;
+
+}
+
+
+
+body.dark .moon-icon{
+
+    display:none;
+
+}
+
+
+
+body.dark .sun-icon{
+
+    display:block;
+
+}
+
+/* =========================
+   VALIDATION UI
+========================= */
+
+
+.input-error{
+
+    margin-top:6px;
+
+    font-size:12px;
+
+    color:#D92D20;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+}
+
+
+
+.input-error::before{
+
+    content:"!";
+
+    width:16px;
+
+    height:16px;
+
+    border-radius:50%;
+
+    background:#FEE4E2;
+
+    color:#D92D20;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+.form-error{
+
+    border-color:#D92D20 !important;
+
+    background:#FFF7F6 !important;
+
+}
+
+
+
+.hibah-form-group input:focus.form-error,
+.hibah-form-group select:focus.form-error,
+.hibah-form-group textarea:focus.form-error{
+
+    box-shadow:
+
+    0 0 0 3px rgba(217,45,32,.15);
+
+}
+
+
+
+
+
+/* DARK MODE */
+
+
+body.dark .form-error{
+
+    background:#3F1D1D !important;
+
+    border-color:#F97066 !important;
+
+}
+
+
+
+body.dark .input-error{
+
+    color:#FDA29B;
+
+}
+
+/* =====================================================
+   GLOBAL CONFIRMATION MODAL
+===================================================== */
+
+.confirm-overlay{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:20px;
+
+    background:rgba(15,23,42,.52);
+    backdrop-filter:blur(4px);
+
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+
+    transition:
+        opacity .2s ease,
+        visibility .2s ease;
+}
+
+.confirm-overlay.show{
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+}
+
+
+/* =====================================================
+   MODAL BOX
+===================================================== */
+
+.confirm-modal{
+    position:relative;
+
+    width:100%;
+    max-width:430px;
+
+    background:#ffffff;
+
+    border:1px solid #EAECF0;
+    border-radius:20px;
+
+    padding:30px 28px 26px;
+
+    box-shadow:
+        0 25px 60px rgba(15,23,42,.22);
+
+    text-align:center;
+
+    transform:
+        translateY(-15px)
+        scale(.96);
+
+    transition:
+        transform .2s ease;
+
+    pointer-events:auto;
+}
+
+.confirm-overlay.show .confirm-modal{
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+
+/* =====================================================
+   ICON
+===================================================== */
+
+.confirm-modal-icon{
+    width:54px;
+    height:54px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#EAF6EF;
+    color:#2E8B57;
+}
+
+.confirm-modal-icon svg{
+    width:25px;
+    height:25px;
+
+    fill:none;
+    stroke:currentColor;
+    stroke-width:2;
+
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.confirm-modal-content{
+    width:100%;
+
+    text-align:center;
+}
+
+.confirm-modal-content h3{
+    margin:0;
+
+    color:#101828;
+
+    font-size:20px;
+    font-weight:700;
+
+    line-height:1.3;
+}
+
+.confirm-modal-content p{
+    max-width:340px;
+
+    margin:10px auto 0;
+
+    color:#667085;
+
+    font-size:14px;
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   BUTTON AREA
+===================================================== */
+
+.confirm-modal-actions{
+    width:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:28px;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.confirm-btn-cancel,
+.confirm-btn-submit{
+    min-width:130px;
+    height:44px;
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:0 18px;
+
+    border-radius:10px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        color .2s ease,
+        transform .15s ease;
+
+    pointer-events:auto;
+}
+
+
+/* CANCEL */
+
+.confirm-btn-cancel{
+    background:#ffffff;
+
+    border:1px solid #D0D5DD;
+
+    color:#344054;
+}
+
+.confirm-btn-cancel:hover{
+    background:#F9FAFB;
+
+    border-color:#98A2B3;
+}
+
+.confirm-btn-cancel:active{
+    transform:scale(.98);
+}
+
+
+/* SUBMIT */
+
+.confirm-btn-submit{
+    border:1px solid transparent;
+
+    background:#2E8B57;
+
+    color:#ffffff;
+}
+
+.confirm-btn-submit:hover{
+    background:#247348;
+}
+
+.confirm-btn-submit:active{
+    transform:scale(.98);
+}
+
+
+/* =====================================================
+   DELETE MODE
+===================================================== */
+
+.confirm-overlay.confirm-delete
+.confirm-modal-icon{
+    background:#FEE4E2;
+
+    color:#D92D20;
+}
+
+.confirm-overlay.confirm-delete
+.confirm-btn-submit{
+    background:#D92D20;
+
+    color:#ffffff;
+}
+
+.confirm-overlay.confirm-delete
+.confirm-btn-submit:hover{
+    background:#B42318;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark .confirm-overlay{
+    background:rgba(0,0,0,.65);
+}
+
+body.dark .confirm-modal{
+    background:#1F2937;
+
+    border-color:#374151;
+}
+
+body.dark .confirm-modal-content h3{
+    color:#F9FAFB;
+}
+
+body.dark .confirm-modal-content p{
+    color:#9CA3AF;
+}
+
+body.dark .confirm-btn-cancel{
+    background:#111827;
+
+    border-color:#4B5563;
+
+    color:#E5E7EB;
+}
+
+body.dark .confirm-btn-cancel:hover{
+    background:#374151;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media(max-width:520px){
+
+    .confirm-overlay{
+        padding:16px;
+    }
+
+    .confirm-modal{
+        max-width:100%;
+
+        padding:26px 20px 22px;
+
+        border-radius:18px;
+    }
+
+    .confirm-modal-actions{
+        flex-direction:column-reverse;
+
+        gap:10px;
+    }
+
+    .confirm-btn-cancel,
+    .confirm-btn-submit{
+        width:100%;
+
+        min-width:0;
+    }
+
+}
+
+
+
+/* =========================
+   TOPBAR + AVATAR FIX
+========================= */
+
+.app-topbar{
+    height:64px;
+    border-radius:18px;
+    padding:0 20px;
+}
+
+.app-actions{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.top-icon{
+    width:38px;
+    height:38px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.user-avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.top-profile-image{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+    border-radius:50%;
+    display:block;
+}
+
+
+/* =========================
+   PROFILE IMAGE FIX
+========================= */
+
+.profile-avatar{
+    width:90px;
+    height:90px;
+    min-width:90px;
+    min-height:90px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.profile-image{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    object-position:center;
+    border-radius:50%;
+    display:block;
+    background:#ffffff;
+}
+
+/* PROFILE PAGE IMAGE OVERRIDE */
+
+.profile-photo .profile-image{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center;
+    border-radius:20px !important;
+    display:block;
+}
+
+/* =========================
+   AVATAR BORDER FIX
+========================= */
+
+.profile-avatar,
+.user-avatar{
+
+    border:1px solid #D0D5DD;
+
+}

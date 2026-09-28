@@ -1,0 +1,1025 @@
+/* =========================
+   EXPORT EXCEL PAGE
+========================= */
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.export-page-card{
+
+    background:var(--card);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    border:1px solid #EAECF0;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+
+    margin-top:25px;
+
+}
+
+
+
+
+
+
+/* =========================
+   TOP BAR
+   TAB + BUTTON
+========================= */
+
+
+.export-topbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   TAB APBD APBN
+========================= */
+
+
+.export-tabs{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+.export-tab{
+
+    width:110px;
+
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:8px;
+
+    background:#ffffff;
+
+    border:1px solid #D0D5DD;
+
+    color:#344054;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.export-tab:hover{
+
+
+    border-color:#2E8B57;
+
+
+    color:#2E8B57;
+
+
+}
+
+
+
+
+
+
+.export-tab.active{
+
+
+    background:var(--primary);
+
+
+    color:white;
+
+
+    border-color:var(--primary);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   BUTTON EXPORT
+========================= */
+
+
+.export-action{
+
+
+    display:flex;
+    justify-content:flex-end;
+    gap:12px;
+
+
+}
+
+
+
+
+
+
+
+.export-btn{
+
+
+     height:38px;
+
+    padding:0 18px;
+
+    border-radius:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+
+
+    border-radius:10px;
+
+
+
+    background:var(--primary);
+
+
+
+    color:white;
+
+
+
+    text-decoration:none;
+
+
+
+    font-size:14px;
+
+
+
+    font-weight:700;
+
+
+
+    transition:.2s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.export-btn:hover{
+
+
+    opacity:.9;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   TITLE
+========================= */
+
+
+.export-title{
+
+
+    text-align:center;
+
+
+
+    font-size:22px;
+
+
+
+    font-weight:700;
+
+
+
+    color:#101828;
+
+
+
+    margin-bottom:30px;
+
+
+
+}
+
+
+
+
+
+
+
+.export-title span{
+
+
+    color:var(--primary);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   TABLE WRAPPER
+========================= */
+
+
+.export-table-wrapper{
+
+
+    width:100%;
+
+
+
+    overflow-x:auto;
+
+
+
+}
+
+
+
+
+
+
+.export-table-wrapper table{
+
+
+    min-width:1100px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   TABLE STYLE
+   mengikuti data hibah
+========================= */
+
+
+.export-table-wrapper .hibah-modern-table{
+
+
+    width:100%;
+
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+
+
+.export-table-wrapper th{
+
+
+    background:#D9EBDD;
+
+
+    color:#065F46;
+
+
+    font-weight:700;
+
+
+    text-align:center;
+
+
+    padding:16px;
+
+
+}
+
+
+
+
+
+.export-table-wrapper td{
+
+
+    padding:16px;
+
+
+    border:1px solid #D0D7DE;
+
+
+    color:#344054;
+
+
+}
+
+
+
+
+
+.export-table-wrapper tr:hover{
+
+
+    background:#F8FAFC;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   EMPTY DATA
+========================= */
+
+
+.export-empty{
+
+
+    height:220px;
+
+
+
+    display:flex;
+
+
+
+    justify-content:center;
+
+
+
+    align-items:center;
+
+
+
+    flex-direction:column;
+
+
+
+    color:#98A2B3;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+
+body.dark .export-page-card{
+
+
+    background:#1F2937;
+
+
+    border-color:#374151;
+
+
+
+}
+
+
+
+
+
+body.dark .export-tab{
+
+
+    background:#111827;
+
+
+    color:#E5E7EB;
+
+
+    border-color:#4B5563;
+
+
+
+}
+
+
+
+
+
+
+body.dark .export-title{
+
+
+    color:#F9FAFB;
+
+
+
+}
+
+
+
+
+
+
+
+body.dark .export-table-wrapper td{
+
+
+    color:#E5E7EB;
+
+
+    border-color:#374151;
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:700px){
+
+
+    .export-topbar{
+
+
+        flex-direction:column;
+
+
+
+        align-items:flex-start;
+
+
+
+        gap:20px;
+
+
+
+    }
+
+
+
+
+
+
+    .export-tabs{
+
+
+        width:100%;
+
+
+
+    }
+
+
+
+
+
+
+    .export-tab{
+
+
+        width:50%;
+
+
+
+    }
+
+
+
+
+
+
+    .export-action{
+
+
+        width:100%;
+
+
+
+    }
+
+
+
+
+
+
+    .export-btn{
+
+
+        width:100%;
+
+
+
+    }
+
+
+
+}
+
+/* =========================
+   FINAL OVERRIDE EXPORT PAGE
+========================= */
+
+
+.export-page-card{
+
+    position:relative;
+
+    width:100%;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.export-topbar{
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    justify-content:space-between !important;
+
+    align-items:center !important;
+
+    width:100%;
+
+}
+
+
+
+
+
+.export-tabs{
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    gap:12px !important;
+
+}
+
+
+
+
+
+.export-tab{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+}
+
+
+
+
+
+.export-action{
+
+    display:flex !important;
+
+    justify-content:flex-end !important;
+
+    align-items:center !important;
+
+}
+
+
+
+
+
+.export-btn{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+}
+
+
+
+
+
+.export-title{
+
+    display:block !important;
+
+    text-align:center !important;
+
+    margin-top:20px;
+
+}
+
+
+
+
+
+.export-table-wrapper{
+
+    display:block !important;
+
+    width:100% !important;
+
+    overflow-x:auto !important;
+
+}
+
+.export-btn.disabled{
+
+    background:#98A2B3;
+
+    cursor:not-allowed;
+
+    opacity:.7;
+
+}
+
+/* =========================
+   DRAG TABLE EXPORT
+========================= */
+
+.export-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    cursor:grab;
+
+    user-select:none;
+
+}
+
+
+.export-table-wrapper.active{
+
+    cursor:grabbing;
+
+}
+
+
+.export-table-wrapper table{
+
+    min-width:1200px;
+
+}
+
+/* =========================
+   FILTER TAHUN EXPORT
+========================= */
+
+.tahun-filter{
+
+    position:relative;
+
+}
+
+
+.tahun-button{
+
+    height:38px;
+
+    padding:0 14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border-radius:8px;
+
+    border:1px solid #D0D5DD;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+
+.tahun-button .arrow{
+
+    display:flex;
+
+    transition:.2s ease;
+
+}
+
+
+
+.tahun-button.open .arrow{
+
+    transform:rotate(180deg);
+
+}
+
+
+
+.tahun-menu{
+
+    display:none;
+
+    position:absolute;
+
+    top:calc(100% + 8px);
+
+    right:0;
+
+    min-width:140px;
+
+    background:white;
+
+    border:1px solid #EAECF0;
+
+    border-radius:10px;
+
+    padding:6px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    z-index:9999;
+
+}
+
+
+
+.tahun-menu.show{
+
+    display:block;
+
+}
+
+
+
+.tahun-menu button{
+
+    width:100%;
+
+    padding:10px 12px;
+
+    border:0;
+
+    background:white;
+
+    text-align:left;
+
+    cursor:pointer;
+
+    border-radius:6px;
+
+}
+
+.tahun-menu button:hover{
+
+    background:#F2F4F7;
+
+}
+
+/* =========================
+   DROPDOWN KEGIATAN
+   STYLE SAMA DENGAN TAHUN
+========================= */
+
+.kegiatan-button{
+
+    height:38px;
+
+    padding:0 14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border-radius:8px;
+
+    border:1px solid #D0D5DD;
+
+    background:white;
+
+    cursor:pointer;
+
+    color:#087443;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.kegiatan-filter{
+    position:relative;
+}
+
+
+.kegiatan-button{
+
+    height:38px;
+
+    padding:0 14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border-radius:8px;
+
+    border:1px solid #D0D5DD;
+
+    background:white;
+
+    cursor:pointer;
+
+}
+
+
+
+.kegiatan-button .arrow{
+
+    display:flex;
+
+    transition:.2s ease;
+
+}
+
+
+
+.kegiatan-button.open .arrow{
+
+    transform:rotate(180deg);
+
+}
+
+
+
+.kegiatan-menu{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-8px);
+
+    position:absolute;
+
+    top:calc(100% + 8px);
+
+    right:0;
+
+    min-width:180px;
+
+    max-width:220px;
+
+    background:white;
+
+    border:1px solid #EAECF0;
+
+    border-radius:10px;
+
+    padding:6px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    z-index:9999;
+
+    transition:.2s ease;
+
+}
+
+
+.kegiatan-menu.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.kegiatan-menu a{
+
+    display:block;
+
+    padding:10px 12px;
+
+    border-radius:6px;
+
+    color:#344054;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+
+.kegiatan-menu a:hover{
+
+    background:#F2F4F7;
+
+      color:#087443; 
+
+}

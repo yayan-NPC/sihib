@@ -1,0 +1,898 @@
+/* =========================
+   EXPORT WORD PAGE
+========================= */
+
+
+
+.word-page-card{
+
+    background:var(--card);
+
+    border-radius:16px;
+
+    padding:30px;
+
+    border:1px solid #EAECF0;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.05);
+
+    margin-top:25px;
+
+}
+
+
+
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+
+.word-topbar{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+/* =========================
+   TAB
+========================= */
+
+
+.word-tabs{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+
+.word-tab{
+
+
+    width:110px;
+
+
+    height:38px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+
+    border-radius:8px;
+
+
+
+    background:white;
+
+
+
+    border:1px solid #D0D5DD;
+
+
+
+    color:#344054;
+
+
+
+    text-decoration:none;
+
+
+
+    font-size:14px;
+
+
+
+    font-weight:600;
+
+
+
+}
+
+
+
+
+
+.word-tab:hover{
+
+    border-color:#2563EB;
+
+    color:#2563EB;
+
+}
+
+
+
+
+.word-tab.active{
+
+    background:#2563EB;
+
+    color:white;
+
+    border-color:#2563EB;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   BUTTON WORD
+========================= */
+
+
+.word-action{
+
+
+    display:flex;
+    justify-content:flex-end;
+}
+
+
+
+
+
+.word-btn{
+
+    height:38px;
+
+    padding:0 18px;
+
+    border-radius:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#2563EB;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    transition:.2s;
+
+}
+
+
+
+
+.word-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   TITLE
+========================= */
+
+
+.word-title{
+
+
+    text-align:center;
+
+
+
+    font-size:22px;
+
+
+
+    font-weight:700;
+
+
+
+    color:#101828;
+
+
+
+    margin-bottom:30px;
+
+
+
+}
+
+
+
+.word-title span{
+
+    color:#2563EB;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+   TABLE
+========================= */
+
+
+.word-table-wrapper{
+
+
+    width:100%;
+
+
+    overflow-x:auto;
+
+
+}
+
+
+
+
+.word-table-wrapper table{
+
+
+    min-width:1100px;
+
+
+}
+
+
+
+.word-table-wrapper .hibah-modern-table{
+
+
+    width:100%;
+
+
+    border-collapse:collapse;
+
+
+}
+
+
+
+
+
+.word-table-wrapper th{
+
+
+    background:#DBEAFE;
+
+    color:#1E40AF;
+
+
+    font-weight:700;
+
+
+    text-align:center;
+
+
+    padding:16px;
+
+
+}
+
+
+
+
+
+.word-table-wrapper td{
+
+
+    padding:16px;
+
+
+    border:1px solid #D0D7DE;
+
+
+    color:#344054;
+
+
+}
+
+
+
+
+
+.word-table-wrapper tr:hover{
+
+
+    background:#F8FAFC;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+
+body.dark .word-page-card{
+
+
+    background:#1F2937;
+
+
+    border-color:#374151;
+
+
+}
+
+
+
+
+
+body.dark .word-tab{
+
+
+    background:#111827;
+
+
+    color:#E5E7EB;
+
+
+    border-color:#4B5563;
+
+
+}
+
+
+
+
+
+body.dark .word-title{
+
+
+    color:#F9FAFB;
+
+
+}
+
+
+
+
+
+body.dark .word-table-wrapper td{
+
+
+    color:#E5E7EB;
+
+
+    border-color:#374151;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:700px){
+
+
+    .word-topbar{
+
+
+        flex-direction:column;
+
+
+        align-items:flex-start;
+
+
+        gap:20px;
+
+
+    }
+
+
+
+
+    .word-tabs{
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+    .word-tab{
+
+
+        width:50%;
+
+
+    }
+
+
+
+
+    .word-action{
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+    .word-btn{
+
+
+        width:100%;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   FINAL OVERRIDE
+========================= */
+
+
+.word-page-card{
+
+    position:relative;
+
+    width:100%;
+
+    z-index:2;
+
+}
+
+
+
+
+
+.word-topbar{
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    justify-content:space-between !important;
+
+    align-items:center !important;
+
+}
+
+
+
+
+
+.word-tabs{
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    gap:12px !important;
+
+}
+
+
+
+
+
+.word-action{
+
+    display:flex !important;
+
+    justify-content:flex-end !important;
+
+}
+
+
+
+
+
+.word-title{
+
+    display:block !important;
+
+    text-align:center !important;
+
+}
+
+
+
+
+
+.word-table-wrapper{
+
+    display:block !important;
+
+    width:100% !important;
+
+    overflow-x:auto !important;
+
+}
+
+.word-btn.disabled{
+
+    background:#98A2B3;
+
+    cursor:not-allowed;
+
+    opacity:.7;
+
+}
+
+.alert-error{
+
+    background:#FEE2E2;
+
+    color:#B91C1C;
+
+    padding:14px 18px;
+
+    border-radius:10px;
+
+    border:1px solid #FCA5A5;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+
+
+.word-btn.disabled{
+
+    background:#98A2B3;
+
+    cursor:not-allowed;
+
+    opacity:.7;
+
+}
+
+/* =========================
+   DRAG TABLE WORD
+========================= */
+
+.word-table-wrapper{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    cursor:grab;
+
+    user-select:none;
+
+}
+
+
+
+.word-table-wrapper.active{
+
+    cursor:grabbing;
+
+}
+
+
+
+.word-table-wrapper table{
+
+    min-width:1200px;
+
+}
+
+.word-action-area{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+/* FILTER TAHUN WORD - BLUE STYLE */
+
+.word-page-card .tahun-button{
+
+    background:#ffffff !important;
+
+    color:#2563EB !important;
+
+    border:1px solid #2563EB !important;
+
+    height:38px;
+
+    padding:0 14px;
+
+    border-radius:8px;
+
+}
+
+
+.word-page-card .tahun-button .tahun-label{
+
+    color:#2563EB !important;
+
+    font-weight:600;
+
+}
+
+
+
+.word-page-card .tahun-button .arrow{
+
+    color:#2563EB !important;
+
+}
+
+
+
+.word-page-card .tahun-button:hover{
+
+    background:#EFF6FF !important;
+
+}
+
+/* WORD FILTER DROPDOWN */
+
+.word-page-card .tahun-button .tahun-label{
+
+    color:#344054;
+
+}
+
+
+.word-page-card .tahun-button:hover .tahun-label{
+
+    color:#2563EB;
+
+}
+
+
+
+.word-page-card .tahun-menu button{
+
+    color:#344054;
+
+    background:white;
+
+}
+
+
+
+.word-page-card .tahun-menu button:hover{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+}
+
+/* =========================
+   DROPDOWN KEGIATAN
+   STYLE SAMA DENGAN TAHUN
+========================= */
+
+.kegiatan-button{
+
+    height:38px;
+
+    padding:0 14px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    border-radius:8px;
+
+    border:1px solid #2563EB;
+
+    background:white;
+
+    cursor:pointer;
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.kegiatan-filter{
+
+    position:relative;
+
+}
+
+
+
+.kegiatan-button .tahun-label{
+
+    color:#2563EB;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+
+.kegiatan-button .arrow{
+
+    display:flex;
+
+    transition:.2s ease;
+
+}
+
+
+
+.kegiatan-button.open .arrow{
+
+    transform:rotate(180deg);
+
+}
+
+
+
+.kegiatan-menu{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-8px);
+
+    position:absolute;
+
+    top:calc(100% + 8px);
+
+    right:0;
+
+    min-width:180px;
+
+    max-width:220px;
+
+    background:white;
+
+    border:1px solid #EAECF0;
+
+    border-radius:10px;
+
+    padding:6px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+    z-index:9999;
+
+    transition:.2s ease;
+
+}
+
+
+
+.kegiatan-menu.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+
+
+.kegiatan-menu a{
+
+    display:block;
+
+    padding:10px 12px;
+
+    border-radius:6px;
+
+    color:#344054;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+
+
+.kegiatan-menu a:hover{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+}
