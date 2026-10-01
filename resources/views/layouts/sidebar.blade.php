@@ -254,8 +254,13 @@
         </small>
 
         <small>
-            Yayan
+            Web Developer - Yayan
         </small>
+        
+        <small>
+            System Analyst - Epri
+        </small>
+
     </div>
 
 </div>

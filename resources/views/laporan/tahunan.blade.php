@@ -28,6 +28,14 @@
             )->merge(
                 \App\Models\HibahAPBN::pluck('tahun')
             )->unique()->sortDesc();
+            $tahunList = collect(
+            \App\Models\HibahAPBD::pluck('tahun')
+            )->merge(
+                \App\Models\HibahAPBN::pluck('tahun')
+            )
+            ->unique()
+            ->sortDesc()
+            ->values();
         @endphp
 
         @foreach($tahunList as $i => $tahun)
