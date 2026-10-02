@@ -17,13 +17,15 @@
     <div class="brand-title">
 
         <h2>
-            SIHIB
+            SIMANTAP
         </h2>
 
 
-        <p>
-            Sistem Informasi<br>
-            Hibah Barang
+         <p>
+        Sistem Informasi Monitoring<br>
+        dan Pemanfaatan Sarana<br>
+        Prasarana Peternakan<br>
+        Hibah Barang
         </p>
 
     </div>
@@ -250,7 +252,7 @@
 
     <div>
         <small>
-            SIHIB 1.0
+            SIMANTAP 1.0
         </small>
 
         <small>

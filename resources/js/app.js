@@ -1618,8 +1618,28 @@ window.lihatDetail = function(id, sumber)
             </div>
 
 
-        </div>
+               </div>
 
+
+        ${
+            data.link_maps
+            ?
+            `
+            <div class="detail-map">
+
+                <a 
+                    href="${escapeHtml(data.link_maps)}"
+                    target="_blank"
+                    class="btn-map"
+                >
+                    📍 Lihat Lokasi Google Maps
+                </a>
+
+            </div>
+            `
+            :
+            ''
+        }
 
 
         <div class="detail-history">

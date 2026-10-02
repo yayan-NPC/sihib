@@ -524,20 +524,39 @@ input:focus{
 
     align-items:center;
 
-    margin-top:5px;
+    width:100%;
 
-    margin-bottom:18px;
+    margin-top:8px;
+
+    margin-bottom:20px;
 
     font-size:14px;
 
 }
 
-.remember input{
 
-    width:auto;
+.remember label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    margin:0;
 
 }
 
+
+.remember input{
+
+    width:16px;
+
+    height:16px;
+
+    margin:0;
+
+}
 
 
 .remember a{
@@ -546,8 +565,9 @@ input:focus{
 
     text-decoration:none;
 
-}
+    line-height:16px;
 
+}
 
 
 /* BUTTON */
@@ -757,7 +777,35 @@ input:focus{
 
 }
 
+.register-link{
 
+    text-align:center;
+
+    margin-top:18px;
+
+    font-size:14px;
+
+    color:#777;
+
+}
+
+
+.register-link a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+.register-link a:hover{
+
+    text-decoration:underline;
+
+}
 </style>
 
 </head>
@@ -870,8 +918,14 @@ input:focus{
                     Selamat Datang Kembali!
 
                 </h2>
+                
+                @if(request()->get('register') == 'success')
 
+<div class="alert-success">
+    Akun telah berhasil dibuat, silakan login.
+</div>
 
+@endif
                 <p>
 
                     Silakan login untuk mengakses SIHIB
@@ -880,7 +934,7 @@ input:focus{
 
 
             </div>
-
+            
             <form method="POST" action="{{ route('login.process') }}">
 
                 @csrf
@@ -970,10 +1024,8 @@ onclick="togglePassword()">
 
 
 
-                    <a href="#">
-
-                        Lupa Password?
-
+                    <a href="/forgot-password">
+                    Lupa Password?
                     </a>
 
 
@@ -982,26 +1034,30 @@ onclick="togglePassword()">
 
 
 
-                <button class="login-btn">
-
-                    Login
-
-                </button>
-
+             <button class="login-btn">
+                Login
+            </button>
 
 
             </form>
 
 
+            <div class="register-link">
+
+                Belum punya akun?
+                
+                <a href="/register">
+                    Register
+                </a>
+
+            </div>
+
+
 
             <div class="bottom">
-
                 gmail - admin@sihib.com
-
                 <br>
-
                 sandi - admin123
-
             </div>
 
 

@@ -72,6 +72,9 @@ class HibahAPBDController extends Controller
         'kabupaten_kota'
             => 'required|string|max:255',
 
+        'link_maps'
+            => 'nullable|string',
+
         'nilai_hibah'
             => 'required|numeric',
 
@@ -204,6 +207,9 @@ class HibahAPBDController extends Controller
 
         'kabupaten_kota'
             => 'required|string|max:255',
+
+        'link_maps'
+            => 'nullable|string',
 
         'nilai_hibah'
             => 'required|numeric',

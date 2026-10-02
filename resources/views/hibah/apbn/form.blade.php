@@ -280,7 +280,33 @@
                     @enderror
 
                 </div>
+            {{-- LINK GOOGLE MAPS --}}
 
+        <div class="hibah-form-group full">
+
+            <label for="link_maps">
+                Link Google Maps
+            </label>
+
+            <input
+                type="text"
+                id="link_maps"
+                name="link_maps"
+                class="@error('link_maps') form-error @enderror"
+                value="{{ old(
+                    'link_maps',
+                    $hibahAPBN->link_maps ?? ''
+                ) }}"
+                placeholder="Tempel link Google Maps"
+            >
+
+            @error('link_maps')
+                <span class="input-error">
+                    {{ $message }}
+                </span>
+            @enderror
+
+        </div>
             </div>
 
         </div>

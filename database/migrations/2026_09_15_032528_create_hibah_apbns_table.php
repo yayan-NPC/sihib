@@ -10,39 +10,47 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up(): void
-{
-    Schema::create('hibah_apbns', function (Blueprint $table) {
+    {
+        Schema::create('hibah_apbns', function (Blueprint $table) {
 
-        $table->id();
+            $table->id();
 
-        $table->string('kegiatan');
-        $table->string('unit');
-        $table->integer('tahun');
+            // Informasi Kegiatan
+            $table->string('kegiatan');
+            $table->string('unit');
+            $table->integer('tahun');
 
-        $table->string('nama_kelompok');
+            // Data Penerima
+            $table->string('nama_kelompok');
 
-        $table->string('desa');
-        $table->string('kecamatan');
-        $table->string('kabupaten_kota');
+            $table->string('desa');
+            $table->string('kecamatan');
+            $table->string('kabupaten_kota');
 
-        $table->decimal('nilai_hibah',15,2);
+            // Link Google Maps
+            $table->text('link_maps')->nullable();
 
-        $table->foreignId('created_by')
-              ->nullable()
-              ->constrained('users')
-              ->nullOnDelete();
+            // Informasi Dana
+            $table->decimal('nilai_hibah', 15, 2);
 
-        $table->foreignId('updated_by')
-              ->nullable()
-              ->constrained('users')
-              ->nullOnDelete();
+            // User Tracking
+            $table->foreignId('created_by')
+                  ->nullable()
+                  ->constrained('users')
+                  ->nullOnDelete();
 
-        $table->timestamps();
+            $table->foreignId('updated_by')
+                  ->nullable()
+                  ->constrained('users')
+                  ->nullOnDelete();
 
-        $table->softDeletes();
+            // Timestamp & Soft Delete
+            $table->timestamps();
 
-    });
-}
+            $table->softDeletes();
+
+        });
+    }
 
     /**
      * Reverse the migrations.

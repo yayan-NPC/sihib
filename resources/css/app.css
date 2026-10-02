@@ -11,7 +11,8 @@
 @import "./hibah.css";
 @import "./profile.css";
 @import "./setting.css";
-
+@import "./auth/register.css";
+@import "./auth/forgot-password.css";
 
 /* LAPORAN */
 @import "./laporan/excel.css";

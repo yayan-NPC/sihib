@@ -15,18 +15,25 @@ return new class extends Migration
 
             $table->id();
 
+            // Informasi Kegiatan
             $table->string('kegiatan');
             $table->string('unit');
             $table->integer('tahun');
 
+            // Data Penerima
             $table->string('nama_kelompok');
 
             $table->string('desa');
             $table->string('kecamatan');
             $table->string('kabupaten_kota');
 
+            // Link Lokasi Google Maps
+            $table->text('link_maps')->nullable();
+
+            // Informasi Dana
             $table->decimal('nilai_hibah', 15, 2);
 
+            // User Tracking
             $table->foreignId('created_by')
                 ->nullable()
                 ->constrained('users')
@@ -37,6 +44,7 @@ return new class extends Migration
                 ->constrained('users')
                 ->nullOnDelete();
 
+            // Timestamp & Soft Delete
             $table->timestamps();
 
             $table->softDeletes();

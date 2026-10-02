@@ -22,6 +22,7 @@ class HibahAPBD extends Model
         'desa',
         'kecamatan',
         'kabupaten_kota',
+        'link_maps',
         'nilai_hibah',
         'foto',
         'kondisi',
