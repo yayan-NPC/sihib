@@ -252,7 +252,6 @@
     <div>
         <small>
            versi 1.1.0
-           APP_KEY=base64:LrO66rc44nW1BYyH8GqdadbbCnKFORY1RN2nheci3Xw=
         </small>
 
         
