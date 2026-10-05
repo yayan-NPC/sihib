@@ -234,7 +234,6 @@
         <span>
             Logout
         </span>
-
     </button>
 
 </form>
@@ -252,16 +251,10 @@
 
     <div>
         <small>
-            SIMANTAP 1.0
+           versi 1.1.0
         </small>
 
-        <small>
-            Web Developer - Yayan
-        </small>
         
-        <small>
-            System Analyst - Epri
-        </small>
 
     </div>
 

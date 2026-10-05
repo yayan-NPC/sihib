@@ -1374,16 +1374,11 @@ body.dark .year-summary-item:hover{
 
 }
 
-
 .action-dropdown{
 
     display:none;
 
-    position:absolute;
-
-    top:42px;
-
-    right:0;
+    position:fixed;
 
     width:130px;
 
@@ -1398,7 +1393,8 @@ body.dark .year-summary-item:hover{
     box-shadow:
         0 10px 30px rgba(0,0,0,.15);
 
-    z-index:999;
+    z-index:999999;
+
 }
 
 
@@ -2091,4 +2087,109 @@ body.dark .year-summary-item:hover{
 
 .btn-map:hover{
     opacity:.85;
+}
+
+/* ============================= */
+/* UPLOAD FOTO BARANG */
+/* ============================= */
+
+
+.upload-box{
+
+    width:100%;
+
+    min-height:130px;
+
+    border:2px dashed #D1D5DB;
+
+    border-radius:16px;
+
+    background:#FAFAFA;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    transition:.3s ease;
+
+}
+
+
+
+.upload-box:hover{
+
+    border-color:#2E8B57;
+
+    background:#F0FDF4;
+
+}
+
+
+
+.upload-icon{
+
+    font-size:32px;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.upload-text{
+
+    color:#334155;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+
+.upload-box small{
+
+    margin-top:5px;
+
+    color:#94A3B8;
+
+    font-size:12px;
+
+}
+
+/* INFORMASI BARANG */
+
+.hibah-barang-grid{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.upload-icon svg{
+
+    width:32px;
+
+    height:32px;
+
+    fill:none;
+
+    stroke:#2E8B57;
+
+    stroke-width:1.8;
+
+    stroke-linecap:round;
+
+    stroke-linejoin:round;
+
 }

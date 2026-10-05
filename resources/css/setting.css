@@ -692,3 +692,23 @@ body.dark .settings-tab{
     border:1px solid #D0D5DD;
 
 }
+
+.settings-footer{
+
+    margin-top:40px;
+
+    padding:20px 0;
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    font-size:12px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:4px;
+
+}

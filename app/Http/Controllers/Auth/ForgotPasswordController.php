@@ -25,7 +25,7 @@ class ForgotPasswordController extends Controller
 
         $request->validate([
 
-            'email'=>'required|email'
+            'email' => 'required|email'
 
         ]);
 
@@ -38,6 +38,7 @@ class ForgotPasswordController extends Controller
 
 
 
+        // jika email tidak ditemukan
         if(!$user){
 
             return back()->with(
@@ -49,13 +50,20 @@ class ForgotPasswordController extends Controller
 
 
 
+        // simpan email untuk reset password
         session([
-            'email'=>$user->email
+            'email' => $user->email
         ]);
 
 
+
+        // email ditemukan
         return redirect()
-            ->route('password.reset.form');
+            ->route('password.reset.form')
+            ->with(
+                'success',
+                'Akun ditemukan. Silakan buat password baru.'
+            );
 
     }
 
@@ -63,18 +71,22 @@ class ForgotPasswordController extends Controller
 
 
 
-    // tampil form reset
-    public function resetForm(Request $request)
+
+
+    // tampil form reset password
+    public function resetForm()
     {
 
         return view(
             'auth.reset-password',
             [
-                'email'=>$request->email
+                'email' => session('email')
             ]
         );
 
     }
+
+
 
 
 
@@ -88,9 +100,9 @@ class ForgotPasswordController extends Controller
 
         $request->validate([
 
-            'email'=>'required|email',
+            'email' => 'required|email',
 
-            'password'=>'required|min:6|confirmed'
+            'password' => 'required|min:6|confirmed'
 
         ]);
 
@@ -103,6 +115,7 @@ class ForgotPasswordController extends Controller
 
 
 
+        // jika email tidak ditemukan
         if(!$user){
 
             return back()->with(
@@ -114,13 +127,24 @@ class ForgotPasswordController extends Controller
 
 
 
+
+
         $user->update([
 
-            'password'=>Hash::make(
+            'password' => Hash::make(
                 $request->password
             )
 
         ]);
+
+
+
+
+
+        // hapus session email
+        session()->forget('email');
+
+
 
 
 

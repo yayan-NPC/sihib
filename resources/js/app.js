@@ -78,6 +78,12 @@ window.toggleActionMenu = function(id){
 
         target.classList.add('show');
 
+        target.classList.add('show');
+
+
+        target.style.top = (rect.bottom + 8) + "px";
+
+        target.style.left = (rect.right - target.offsetWidth) + "px";
 
         const dropdownHeight =
             target.offsetHeight;
@@ -1533,6 +1539,17 @@ document.getElementById('confirmCancel')
 window.lihatDetail = function(id, sumber)
 {
 
+    // tutup dropdown aksi saat buka detail
+    document
+        .querySelectorAll('.action-dropdown.show')
+        .forEach(menu => {
+
+            menu.classList.remove('show');
+            menu.classList.remove('drop-up');
+
+        });
+
+
     fetch(`/hibah/${sumber.toLowerCase()}/data`)
 
     .then(res => res.json())
@@ -1723,5 +1740,31 @@ document
     )
     .classList.remove('show');
 
+
+});
+
+// =====================================================
+// UPLOAD FOTO HIBAH
+// =====================================================
+
+document.getElementById('foto')?.addEventListener('change', function(){
+
+    const text = document.getElementById('uploadText');
+
+
+    if(!text){
+        return;
+    }
+
+
+    if(this.files.length){
+
+        text.textContent = this.files[0].name;
+
+    }else{
+
+        text.textContent = "Pilih Foto Barang";
+
+    }
 
 });

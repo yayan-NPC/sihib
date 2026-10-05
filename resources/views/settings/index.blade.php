@@ -725,6 +725,18 @@ checked
 </div>
 
 
+<div class="settings-footer">
+
+    <small>
+        Web Developer - Yayan
+    </small>
+
+    <small>
+        System Analyst - Epri
+    </small>
+
+</div>
+
 
 @endsection
 

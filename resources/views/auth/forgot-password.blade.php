@@ -12,12 +12,17 @@
 
 @vite('resources/css/auth/forgot-password.css')
 
+@vite('resources/js/app.js')
+
 
 </head>
 
 
 
 <body class="forgot-page">
+
+
+@include('components.alert')
 
 
 
@@ -61,7 +66,9 @@
 
 
 
+
     <form method="POST" action="{{ route('password.email') }}">
+
     @csrf
 
 
@@ -82,6 +89,7 @@
             type="email"
             name="email"
             placeholder="Masukkan email"
+            value="{{ old('email') }}"
             required>
 
 
@@ -99,7 +107,7 @@
         type="submit">
 
 
-            Kirim Link Reset
+            Reset Password
 
 
         </button>
@@ -118,7 +126,7 @@
     <div class="forgot-back-login">
 
 
-        <a href="/login">
+        <a href="{{ route('login') }}">
 
             Kembali ke Login
 

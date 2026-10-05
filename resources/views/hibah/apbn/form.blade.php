@@ -323,7 +323,7 @@
             </h3>
 
 
-            <div class="hibah-form-grid">
+            <div class="hibah-form-grid hibah-barang-grid">
 
 
                 {{-- FOTO --}}
@@ -335,13 +335,56 @@
                     </label>
 
 
-                    <input
-                        type="file"
-                        id="foto"
-                        name="foto"
-                        accept="image/*"
-                        class="@error('foto') form-error @enderror"
-                    >
+                     <div class="upload-wrapper">
+
+    <label for="foto" class="upload-box">
+
+        <div class="upload-icon">
+
+    <svg viewBox="0 0 24 24">
+
+        <rect 
+            x="3" 
+            y="5" 
+            width="18" 
+            height="14" 
+            rx="2"
+        />
+
+        <circle 
+            cx="12" 
+            cy="12" 
+            r="3"
+        />
+
+        <path 
+            d="M8 5l1.5-2h5L16 5"
+        />
+
+    </svg>
+
+</div>
+
+        <div class="upload-text" id="uploadText">
+            Pilih Foto Barang
+        </div>
+
+        <small>
+            Format JPG, PNG maksimal 2MB
+        </small>
+
+    </label>
+
+
+    <input
+        type="file"
+        id="foto"
+        name="foto"
+        accept="image/*"
+        hidden
+    >
+
+</div>
 
 
                     @if(isset($hibahAPBN) && $hibahAPBN->foto)
